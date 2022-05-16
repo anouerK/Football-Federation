@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="811.0" prefWidth="1321.0" styleClass="white" stylesheets="@../valuesShop/shop.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.ShopinCartController">
+   <children>
+      <BorderPane prefHeight="811.0" prefWidth="1346.0" styleClass="white" stylesheets="@../valuesShop/shop.css">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="811.0" prefWidth="168.0" styleClass="right-bar2" stylesheets="@../valuesShop/shop.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="88.0" prefWidth="168.0">
+                     <children>
+                        <Label text="Shopping Cart" textFill="#4a4a4a">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </HBox>
+                  <ImageView fx:id="home" fitHeight="60.0" fitWidth="100.0" onMousePressed="#homeaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../AhmedImages/home9.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Pane prefHeight="26.0" prefWidth="168.0" />
+                  <ImageView fx:id="shop" fitHeight="60.0" fitWidth="100.0" onMousePressed="#shopaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../AhmedImages/shop9.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="white" stylesheets="@../valuesShop/shop.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="106.0" prefWidth="1178.0" styleClass="white" stylesheets="@../valuesShop/shop.css">
+                     <children>
+                        <Label fx:id="prodvide" textFill="#f16c31">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="white" stylesheets="@../valuesShop/shop.css" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane prefHeight="570.0" prefWidth="3000.0" styleClass="transparent" stylesheets="@../valuesShop/shop.css">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="185.0" prefWidth="1178.0" styleClass="white" stylesheets="@../valuesShop/shop.css">
+                     <children>
+                        <Button fx:id="commande" mnemonicParsing="false" onAction="#commandeaction" prefHeight="40.0" prefWidth="140.0" styleClass="search-button" stylesheets="@../valuesShop/shop.css" text="Passer Commande" textFill="WHITE" />
+                     </children>
+                     <padding>
+                        <Insets right="20.0" top="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

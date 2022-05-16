@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TournoiFrontController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="373.0">
+                     <children>
+                        <ImageView fx:id="rollback" fitHeight="25.0" fitWidth="23.0" onMouseClicked="#rollback" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="-280.0" top="-60.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Détails">
+                           <font>
+                              <Font name="Cambria Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="575.0" prefWidth="100.0" styleClass="chosen-fruit-card" stylesheets="@style.css" fx:id="xi">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fx:id="imgV" fitHeight="150.0" fitWidth="150.0" nodeOrientation="INHERIT" onMouseClicked="#onClick" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="nom" textFill="#170000">
+                           <font>
+                              <Font name="Calibri Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dated" textFill="#170000">
+                           <font>
+                              <Font name="Calibri Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="datef" textFill="#170000">
+                           <font>
+                              <Font name="Calibri Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="type" textFill="#170000">
+                           <font>
+                              <Font name="Calibri Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nbrc" textFill="#170000">
+                           <font>
+                              <Font name="Calibri Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgreward" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="det" mnemonicParsing="false" onAction="#showClassement" styleClass="shopping-online-card" stylesheets="@bootstrap.css" text="detail">
+                           <VBox.margin>
+                              <Insets right="-50.0" />
+                           </VBox.margin></Button>
+                        <Button fx:id="det1" mnemonicParsing="false" onAction="#showGames" styleClass="shopping-online-card" stylesheets="@bootstrap.css" text="matches">
+                           <VBox.margin>
+                              <Insets right="150.0" top="-30.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="700.0" prefWidth="785.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="700.0" prefWidth="700.0" stylesheets="@style.css">
+                           <children>
+                              <Label text="Listes Des Tournois">
+                                 <font>
+                                    <Font name="Cambria Bold" size="40.0" />
+                                 </font>
+                              </Label>
+                              <HBox fx:id="hb" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" styleClass="shadow" stylesheets="@style.css">
+                                 <children>
+                                    <ListView fx:id="list" onMouseClicked="#detail" prefHeight="900.0" prefWidth="500.0" styleClass="add-btn" stylesheets="@style.css">
+                                       <opaqueInsets>
+                                          <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                                       </opaqueInsets>
+                                       <effect>
+                                          <ColorAdjust />
+                                       </effect>
+                                    </ListView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

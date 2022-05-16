@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" layoutY="100.0" prefHeight="643.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.ArticleFrontController">
+   <children>
+      <HBox alignment="CENTER" layoutX="50.0" layoutY="85.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="586.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+         <children>
+            <VBox layoutX="50.0" layoutY="100.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="600.0">
+               <children>
+                  <ListView fx:id="listA" layoutX="50.0" layoutY="100.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showDetail" prefHeight="495.0" prefWidth="600.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ListView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="-77.0" prefHeight="54.0" prefWidth="272.0" text="Listes Articles" textFill="#1d44c4">
+         <font>
+            <Font name="Calibri Bold" size="48.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combobox" layoutX="442.0" layoutY="-22.0" onAction="#combochange" prefWidth="150.0" />
+      <ImageView fx:id="rollback" fitHeight="37.0" fitWidth="38.0" layoutX="11.0" layoutY="-95.0" onMouseClicked="#rollback" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

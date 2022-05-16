@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #d1e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AffichTournoiController">
+   <children>
+      <TableView fx:id="tableTournoi" layoutX="2.0" layoutY="1.0" onMousePressed="#afichimg" prefHeight="582.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="id_t" onEditStart="#supp" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="id_nom" onEditCommit="#change" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="id_dated" onEditCommit="#chandedated" prefWidth="75.0" text="dated" />
+            <TableColumn fx:id="id_datef" onEditCommit="#changedatef" prefWidth="75.0" text="datef" />
+            <TableColumn fx:id="id_typet" onEditCommit="#changetype" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="id_nbrc" onEditCommit="#changenbrc" prefWidth="75.0" text="nbrc" />
+            <TableColumn fx:id="id_img" prefWidth="227.0" text="logo" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="id_log" fitHeight="210.0" fitWidth="81.0" layoutX="690.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+      <BorderPane layoutX="602.0" layoutY="1.0" prefHeight="600.0" prefWidth="400.0">
+         <center>
+            <HBox minHeight="-Infinity" prefHeight="700.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="400.0">
+                     <children>
+                        <Button fx:id="back" mnemonicParsing="false" onAction="#backMenu" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #00cc99;" styleClass="shopping-online-card" stylesheets="@style.css" text="Back" />
+                        <PieChart fx:id="pie" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="table-column" stylesheets="@bootstrap.css" />
+                        <Button fx:id="btx" mnemonicParsing="false" onAction="#ajoutT" style="-fx-background-color: #66ccff;" styleClass="shopping-online-card" stylesheets="@style.css" text="Add">
+                           <VBox.margin>
+                              <Insets bottom="-30.0" left="75.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="pdf" mnemonicParsing="false" onAction="#PDF" style="-fx-background-color: #3d9a31;" styleClass="shopping-online-card" stylesheets="@style.css" text="Pdf" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

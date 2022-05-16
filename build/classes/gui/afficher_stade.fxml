@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="812.0" style="-fx-background-color: #d1e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Afficher_stadeController">
+   <children>
+      <TableView fx:id="tablestade" layoutX="310.0" layoutY="88.0" onMouseClicked="#selected" prefHeight="281.0" prefWidth="471.0">
+        <columns>
+          <TableColumn fx:id="id_sta" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="nom_st" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="lieu_sta" prefWidth="75.0" text="lieu" />
+            <TableColumn fx:id="nbr_sta" prefWidth="75.0" text="capacite" />
+            <TableColumn fx:id="etat_sta" prefWidth="75.0" text="etat" />
+            <TableColumn fx:id="image_sta" prefWidth="75.0" text="image" visible="false" />
+            <TableColumn fx:id="image_st" prefWidth="95.0" text="image" />
+        </columns>
+      </TableView>
+      <TextField fx:id="recherche_sta" layoutX="622.0" layoutY="46.0" promptText="Search" />
+      <TextField fx:id="nom_st1" layoutX="85.0" layoutY="80.0" promptText="Nom" />
+      <TextField fx:id="lieu_sta1" layoutX="85.0" layoutY="119.0" promptText="Lieu" />
+      <TextField fx:id="nbr_sta1" layoutX="85.0" layoutY="155.0" promptText="Capacité" />
+      <TextField fx:id="etat_sta1" layoutX="85.0" layoutY="197.0" promptText="etat" />
+      <TextField fx:id="image_sta1" layoutX="85.0" layoutY="236.0" promptText="image" />
+      <Button fx:id="upload" layoutX="247.0" layoutY="236.0" mnemonicParsing="false" onAction="#upload" prefHeight="25.0" prefWidth="59.0" text="Upload" />
+      <ImageView fx:id="imageview" fitHeight="88.0" fitWidth="100.0" layoutX="110.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnadd" layoutX="114.0" layoutY="399.0" mnemonicParsing="false" onAction="#addd" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #66ccff;" styleClass="buttonCRUD" text="Add" textFill="WHITE" />
+      <Button fx:id="btndelete" layoutX="399.0" layoutY="399.0" mnemonicParsing="false" onAction="#deletee" prefHeight="28.0" prefWidth="83.0" style="-fx-background-color: #f52020;" styleClass="buttonCRUD" text="Delete" textFill="WHITE" />
+      <Button fx:id="btnmodofier" layoutX="257.0" layoutY="400.0" mnemonicParsing="false" onAction="#modifierr" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #3d9a31;" styleClass="buttonCRUD" text="Update" textFill="WHITE" />
+      <Button fx:id="pdff" layoutX="722.0" layoutY="375.0" mnemonicParsing="false" onAction="#pdff" prefHeight="17.0" prefWidth="49.0" style="-fx-background-color: #1e8011;" styleClass="buttonCRUD" text="PDF" textFill="WHITE" />
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="80.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-plus-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="223.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-hand-with-pen-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="369.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-trash-48.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="refrechh" layoutX="519.0" layoutY="398.0" mnemonicParsing="false" onAction="#refrechh" prefHeight="28.0" prefWidth="83.0" style="-fx-background-color: #69825e;" styleClass="buttonCRUD" text="Refrech" textFill="WHITE" />
+      <Label layoutX="310.0" layoutY="19.0" mouseTransparent="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="17.0" prefWidth="100.0" text="Stade" textFill="#cd1111" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="backkk" layoutX="93.0" layoutY="24.0" mnemonicParsing="false" onAction="#backkk" prefHeight="28.0" prefWidth="94.0" style="-fx-background-color: #00cc99;" styleClass="buttonCRUD" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="92.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-undo-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="491.0" layoutY="38.0" text="Search" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="82.0" layoutX="450.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-search-64.png" />
+         </image>
+      </ImageView>
+      <VBox layoutY="-7.0" prefHeight="472.0" prefWidth="76.0" style="-fx-background-color: #4059a9;" styleClass="dashboard" stylesheets="@../Downloads/recruti_desktop-sinda/forum/build/classes/esprit/recrutini/view/stylesheet.css">
+         <children>
+            <Pane prefHeight="73.0" prefWidth="76.0" style="-fx-background-radius: 15 0 15 15;">
+               <children>
+                  <Label />
+                  <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="7.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/img/fedd.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#btnhome" prefHeight="34.0" prefWidth="74.0" styleClass="button3" stylesheets="@../Downloads/recruti_desktop-sinda/forum/build/classes/esprit/recrutini/view/stylesheet.css" text="Home" textFill="#171616">
+               <opaqueInsets>
+                  <Insets bottom="25.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="profile" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnstade" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../Downloads/recruti_desktop-sinda/forum/build/classes/esprit/recrutini/view/stylesheet.css" text="Stade" textFill="#323030">
+               <opaqueInsets>
+                  <Insets bottom="25.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/img/loc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#btnarbitre" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../Downloads/recruti_desktop-sinda/forum/build/classes/esprit/recrutini/view/stylesheet.css" text="Arbitre" textFill="#252323">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/img/client.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="25.0" />
+         </padding>
+      </VBox>
+      <ImageView fitHeight="73.0" fitWidth="66.0" layoutX="260.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-place-marker-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

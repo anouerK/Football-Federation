@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="776.0" style="-fx-background-color: #d1e0e0;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Afficher_arbitreController">
+    <stylesheets>
+        <URL value="@afficher_arbitre.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tablearbitre" layoutX="314.0" layoutY="77.0" onMouseClicked="#selectarbitre" prefHeight="338.0" prefWidth="443.0">
+        <columns>
+          <TableColumn fx:id="id_arb" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="nom_arb" prefWidth="97.0" text="nom" />
+            <TableColumn fx:id="image_arb" prefWidth="107.0" text="image" visible="false" />
+            <TableColumn fx:id="nbr_arb" prefWidth="54.0" text="nombre" />
+            <TableColumn fx:id="desc_arb" minWidth="0.0" prefWidth="120.0" text="description" />
+            <TableColumn fx:id="image_ar" prefWidth="96.0" text="image" />
+        </columns>
+      </TableView>
+      <Label layoutX="292.0" layoutY="16.0" mouseTransparent="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="17.0" prefWidth="100.0" text="Arbitre" textFill="#cd1111" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom_arb1" layoutX="86.0" layoutY="98.0" promptText="Nom" />
+      <TextField fx:id="nbr_arb1" layoutX="86.0" layoutY="137.0" promptText="Nombre d'experience" />
+      <TextArea fx:id="desc_arb1" layoutX="86.0" layoutY="175.0" prefHeight="68.0" prefWidth="200.0" promptText="Description" />
+      <Button fx:id="upload" layoutX="250.0" layoutY="292.0" mnemonicParsing="false" onAction="#upload" text="upload" />
+      <ImageView fx:id="imageview" fitHeight="82.0" fitWidth="116.0" layoutX="103.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="image_arb1" layoutX="86.0" layoutY="261.0" prefHeight="25.0" prefWidth="200.0" promptText="Image" />
+      <TextField fx:id="recherche" layoutX="602.0" layoutY="35.0" promptText="Search" />
+      <Button fx:id="btnadd" layoutX="116.0" layoutY="435.0" mnemonicParsing="false" onAction="#addd" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #66ccff;" styleClass="buttonCRUD" text="Add" textFill="WHITE" />
+      <Button fx:id="btndelete" layoutX="401.0" layoutY="435.0" mnemonicParsing="false" onAction="#deletee" prefHeight="28.0" prefWidth="83.0" style="-fx-background-color: #f52020;" styleClass="buttonCRUD" text="Delete" textFill="WHITE" />
+      <Button fx:id="btnmodofier" layoutX="252.0" layoutY="436.0" mnemonicParsing="false" onAction="#modifierr" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #3d9a31;" styleClass="buttonCRUD" text="Update" textFill="WHITE" />
+      <Button fx:id="pdff" layoutX="672.0" layoutY="436.0" mnemonicParsing="false" onAction="#pdff" prefHeight="17.0" prefWidth="49.0" style="-fx-background-color: #1e8011;" styleClass="buttonCRUD" text="PDF" textFill="WHITE" />
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="82.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-plus-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="220.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-eye-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="372.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/fermer-croix-supprimer-erreurs-sortie-icone-4368-48.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="refrechh" layoutX="550.0" layoutY="434.0" mnemonicParsing="false" onAction="#refrechh" prefHeight="28.0" prefWidth="83.0" style="-fx-background-color: #69825e;" styleClass="buttonCRUD" text="Refrech" textFill="WHITE" />
+      <Button fx:id="backkk" layoutX="83.0" layoutY="8.0" mnemonicParsing="false" onAction="#backkk" prefHeight="28.0" prefWidth="94.0" style="-fx-background-color: #00cc99;" styleClass="buttonCRUD" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="82.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-undo-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="470.0" layoutY="28.0" text="Recherche" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="82.0" layoutX="430.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-search-64.png" />
+         </image>
+      </ImageView>
+      <VBox layoutY="-1.0" prefHeight="496.0" prefWidth="76.0" style="-fx-background-color: #4059a9;" styleClass="dashboard" stylesheets="@../Downloads/recruti_desktop-sinda/forum/build/classes/esprit/recrutini/view/stylesheet.css">
+         <children>
+            <Pane prefHeight="73.0" prefWidth="76.0" style="-fx-background-radius: 15 0 15 15;">
+               <children>
+                  <Label />
+                  <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="7.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/img/fedd.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#btnhome" prefHeight="34.0" prefWidth="74.0" styleClass="button3" text="Home" textFill="#171616">
+               <opaqueInsets>
+                  <Insets bottom="25.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="profile" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnstade" prefHeight="66.0" prefWidth="74.0" styleClass="button3" text="Stade" textFill="#323030">
+               <opaqueInsets>
+                  <Insets bottom="25.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/img/loc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" onAction="#btnarbitre" prefHeight="66.0" prefWidth="74.0" styleClass="button3" text="Arbitre" textFill="#252323">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/img/client.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="25.0" />
+         </padding>
+      </VBox>
+      <ImageView fitHeight="73.0" fitWidth="66.0" layoutX="241.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/administrator-male.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

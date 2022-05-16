@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="718.0" style="-fx-background-color: #d1e0e0;" stylesheets="@bootstrap.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjoutRewardsController">
+   <children>
+      <Label layoutX="72.0" layoutY="39.0" text="rank" />
+      <Label layoutX="72.0" layoutY="100.0" text="trophe" />
+      <Label layoutX="72.0" layoutY="171.0" text="prixR" />
+      <Label layoutX="72.0" layoutY="237.0" text="img" />
+      <Label layoutX="63.0" layoutY="379.0" text="nom Tournoi" />
+      <TextField fx:id="rank" layoutX="165.0" layoutY="34.0" />
+      <TextField fx:id="trophe" layoutX="165.0" layoutY="95.0" />
+      <TextField fx:id="prix" layoutX="165.0" layoutY="166.0" />
+      <Button fx:id="btf" layoutX="359.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#photoupload" style="-fx-background-color: #69825e;" text="Upload" />
+      <Button layoutX="218.0" layoutY="468.0" mnemonicParsing="false" onAction="#ajoutR" prefHeight="44.0" prefWidth="83.0" style="-fx-background-color: #66ccff;" text="Add" />
+      <ComboBox fx:id="tournoi" layoutX="184.0" layoutY="374.0" onAction="#selectTournoi" prefWidth="150.0" />
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="149.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="tih" layoutX="382.0" layoutY="316.0" text="Label" />
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="169.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-plus-40.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

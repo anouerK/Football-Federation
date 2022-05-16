@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="662.0" style="-fx-background-color: #d1e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.MainBackController">
+   <children>
+      <ImageView fx:id="rollback" fitHeight="35.0" fitWidth="41.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#rollback" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="users" fitHeight="60.0" fitWidth="80.0" layoutX="100.0" layoutY="100.0" onMouseClicked="#users" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AhmedImages/users.png" />
+         </image></ImageView>
+      <ImageView fx:id="articles" fitHeight="60.0" fitWidth="80.0" layoutX="250.0" layoutY="100.0" onMouseClicked="#articles" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AhmedImages/articlej.png" />
+         </image></ImageView>
+      <ImageView fx:id="badges" fitHeight="60.0" fitWidth="80.0" layoutX="400.0" layoutY="100.0" onMouseClicked="#badges" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AhmedImages/badge.png" />
+         </image></ImageView>
+      <ImageView fx:id="shopb" fitHeight="60.0" fitWidth="80.0" layoutX="550.0" layoutY="100.0" onMouseClicked="#shopb" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AhmedImages/shop3.png" />
+         </image></ImageView>
+      <ImageView fx:id="tournements" fitHeight="60.0" fitWidth="80.0" layoutX="100.0" layoutY="200.0" onMouseClicked="#tournements" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AhmedImages/tour.png" />
+         </image></ImageView>
+      <ImageView fx:id="referee" fitHeight="60.0" fitWidth="80.0" layoutX="250.0" layoutY="200.0" onMouseClicked="#referee" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AhmedImages/referee.png" />
+         </image></ImageView>
+      <ImageView fx:id="stadiums" fitHeight="60.0" fitWidth="80.0" layoutX="400.0" layoutY="200.0" onMouseClicked="#stadiums" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AhmedImages/st.png" />
+         </image></ImageView>
+      <ImageView fx:id="rewards" fitHeight="60.0" fitWidth="80.0" layoutX="550.0" layoutY="200.0" onMouseClicked="#rewards" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/reward.png" />
+         </image></ImageView>
+      <ImageView fx:id="club" fitHeight="60.0" fitWidth="80.0" layoutX="250.0" layoutY="300.0" onMouseClicked="#club" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/club.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sponsor" fitHeight="60.0" fitWidth="80.0" layoutX="400.0" layoutY="300.0" onMouseClicked="#sponsor" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/deal.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

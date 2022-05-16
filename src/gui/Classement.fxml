@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ClassementController">
+   <children>
+      <BorderPane layoutX="100.0" layoutY="75.0" prefHeight="500.0" prefWidth="500.0" stylesheets="@bootstrap_1.css">
+         <center>
+            <TableView fx:id="tab" onMouseClicked="#ClubDetail" prefHeight="200.0" prefWidth="200.0" stylesheets="@bootstrap.css" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="club" prefWidth="306.0" text="Club" />
+                <TableColumn fx:id="pts" minWidth="0.0" prefWidth="193.0" text="Points" />
+              </columns>
+               <styleClass>
+                  <String fx:value="table-view" />
+                  <String fx:value="table-row-cell" />
+               </styleClass>
+            </TableView>
+         </center>
+         <styleClass>
+            <String fx:value="col-md-5" />
+            <String fx:value="table-bordered" />
+         </styleClass>
+      </BorderPane>
+      <Button fx:id="back" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#backMe" styleClass="right-bar" stylesheets="@style.css" text="back" />
+   </children>
+</AnchorPane>

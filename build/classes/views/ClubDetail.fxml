@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ClubDetailController">
+   <children>
+      <HBox layoutX="100.0" layoutY="100.0" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="chosen-fruit-card" stylesheets="@../gui/style.css" HBox.hgrow="ALWAYS" fx:id="xi">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#back" text="back" />
+                  <ImageView fx:id="img" fitHeight="200.0" fitWidth="200.0" layoutX="100.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="25.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="nom" text="Label">
+                     <VBox.margin>
+                        <Insets left="250.0" top="-200.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descr" text="Label">
+                     <VBox.margin>
+                        <Insets left="250.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="presi" text="Label">
+                     <VBox.margin>
+                        <Insets left="250.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+                           <HBox.margin>
+                              <Insets left="300.0" />
+                           </HBox.margin>
+                           <children>
+                              <ListView fx:id="listJ" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0">
+                                 <VBox.margin>
+                                    <Insets left="-50.0" top="50.0" />
+                                 </VBox.margin>
+                              </ListView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

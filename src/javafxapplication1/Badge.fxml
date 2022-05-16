@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="857.0" style="-fx-background-color: #d1e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.BadgeController">
+   <children>
+      <TableView fx:id="tabB" layoutX="218.0" layoutY="59.0" prefHeight="313.0" prefWidth="628.0">
+        <columns>
+          <TableColumn fx:id="idB" prefWidth="72.0" text="idB" />
+          <TableColumn fx:id="nomB" onEditCommit="#onEditChangenomB" prefWidth="190.0" text="nomB" />
+            <TableColumn fx:id="nbB" onEditCommit="#onEditChangenbB" prefWidth="56.0" text="nbB" />
+            <TableColumn fx:id="logoB" onEditStart="#onEditStartlogoB" prefWidth="250.0" text="logoB" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tanomB" layoutX="55.0" layoutY="121.0" prefHeight="25.0" prefWidth="128.0" />
+      <TextField fx:id="tanbB" layoutX="55.0" layoutY="188.0" prefHeight="25.0" prefWidth="128.0" />
+      <Button layoutX="92.0" layoutY="232.0" mnemonicParsing="false" onAction="#upload" style="-fx-background-color: #3d9a31;" text="Upload" />
+      <Button layoutX="87.0" layoutY="267.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #66ccff;" text="Add" />
+      <Label layoutX="11.0" layoutY="125.0" text="nomB" />
+      <Label layoutX="17.0" layoutY="192.0" text="nbB" />
+      <Label fx:id="badgeimg" layoutX="37.0" layoutY="142.0" prefHeight="40.0" prefWidth="155.0" />
+      <Button fx:id="remove" layoutX="44.0" layoutY="348.0" mnemonicParsing="false" onAction="#onremove" style="-fx-background-color: #f52020;" text="Delete" />
+      <TextField fx:id="searchbar" layoutX="616.0" layoutY="26.0" onInputMethodTextChanged="#oneditsearchbar" />
+      <ImageView fx:id="rollback" fitHeight="33.0" fitWidth="32.0" layoutX="22.0" layoutY="10.0" onMouseClicked="#rollback" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="532.0" layoutY="21.0" text="Search" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="82.0" layoutX="493.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-search-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="14.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-trash-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="55.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-plus-40.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="329.0" layoutY="7.0" mouseTransparent="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="17.0" prefWidth="100.0" text="Badge" textFill="#cd1111" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="backkk" layoutX="100.0" layoutY="25.0" mnemonicParsing="false" onAction="#backkk" prefHeight="28.0" prefWidth="94.0" style="-fx-background-color: #00cc99;" styleClass="buttonCRUD" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="85.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/icons8-undo-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="86.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/img/fedd.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

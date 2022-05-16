@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.Home_turbo_devsController">
+   <children>
+      <BorderPane prefHeight="811.0" prefWidth="1321.0">
+         <left>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="65.0" spacing="50.0" style="-fx-background-color: #ADD8E6;" stylesheets="@../valuesShop/shop.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="homeb" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <ImageView fx:id="articlevf" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#articlevf" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="-55.0" />
+                     </VBox.margin></ImageView>
+                  <ImageView fx:id="tournements" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#tournements" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="-35.0" />
+                     </VBox.margin></ImageView>
+                  <ImageView fx:id="shopv" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#shopv" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="-25.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="contactusb" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#contactusb" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="-20.0" />
+                     </VBox.margin></ImageView>
+                  <ImageView fx:id="dashboard" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#dashboard" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></ImageView>
+                  <ImageView fx:id="loginv" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#loginv" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin></ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="-265.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="636.0" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <ImageView fx:id="fakeback" fitHeight="542.0" fitWidth="620.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../AhmedImages/fakeback.png" />
+                     </image></ImageView>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

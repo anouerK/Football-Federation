@@ -1,0 +1,65 @@
+[0316/165427.541:INFO:CONSOLE(2)] "JQMIGRATE: Migrate is installed, version 3.3.2", source: https://www.codenameone.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2 (2)
+[0316/165513.843:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 27
+[0316/165513.846:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 31
+[0316/165513.856:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 33
+[0316/165513.861:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 23
+[0316/165513.997:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 37
+[0316/165514.279:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 35
+[0316/165514.279:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 39
+[0316/165514.281:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 45
+[0316/165514.281:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 43
+[0316/165514.282:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 41
+[0316/165514.282:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 29
+[0316/165514.282:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 47
+[0316/165514.283:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 51
+[0316/165514.283:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 61
+[0316/165514.283:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 57
+[0316/165514.284:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 59
+[0316/165514.284:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 49
+[0316/165514.284:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 63
+[0316/165514.285:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 55
+[0316/165514.285:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 53
+[0316/165514.286:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 67
+[0316/165514.286:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 65
+[0316/165514.286:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 71
+[0316/165514.287:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 75
+[0316/165514.287:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 69
+[0316/165514.288:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 73
+[0316/165514.288:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 77
+[0316/165514.289:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 15
+[0316/165716.895:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/165716.984:INFO:CONSOLE(0)] "Failed to decode downloaded font: http://127.0.0.1:8000/fonts/fontawesome-webfont3e6e.html?v=4.7.0", source: http://127.0.0.1:8000/user (0)
+[0316/165716.984:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/user (0)
+[0316/165718.302:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/165718.304:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/165723.440:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/165736.734:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/170128.341:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/170128.358:INFO:CONSOLE(0)] "Failed to decode downloaded font: http://127.0.0.1:8000/fonts/fontawesome-webfont3e6e.html?v=4.7.0", source: http://127.0.0.1:8000/user (0)
+[0316/170128.358:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/user (0)
+[0316/170129.651:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/170129.653:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/170139.248:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/170151.217:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/170151.255:INFO:CONSOLE(0)] "Failed to decode downloaded font: http://127.0.0.1:8000/fonts/fontawesome-webfont3e6e.html?v=4.7.0", source: http://127.0.0.1:8000/user (0)
+[0316/170151.256:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/user (0)
+[0316/170151.391:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/170151.392:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0316/181032.506:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[0316/181032.507:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[0316/181706.962:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0317/114639.619:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0317/114639.689:INFO:CONSOLE(0)] "Failed to decode downloaded font: http://127.0.0.1:8000/fonts/fontawesome-webfont3e6e.html?v=4.7.0", source: http://127.0.0.1:8000/user (0)
+[0317/114639.696:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/user (0)
+[0317/114640.171:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0317/114640.204:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0317/114642.225:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0317/114720.764:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0317/114720.814:INFO:CONSOLE(0)] "Failed to decode downloaded font: http://127.0.0.1:8000/fonts/fontawesome-webfont3e6e.html?v=4.7.0", source: http://127.0.0.1:8000/user (0)
+[0317/114720.815:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/user (0)
+[0317/114721.096:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0317/114721.098:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0317/114722.325:INFO:CONSOLE(34)] "slider resize", source: http://127.0.0.1:8000/js/matches-slider.js (34)
+[0516/161400.129:INFO:CONSOLE(66)] "You must enable Billing on the Google Cloud Project at https://console.cloud.google.com/project/_/billing/enable Learn more at https://developers.google.com/maps/gmp-get-started", source: https://maps.googleapis.com/maps/api/js?key=AIzaSyCy-fMWerzvXcPCV0FDI07hW2DAzs_mnpY&callback=initMap (66)
+[0516/161401.668:WARNING:spdy_session.cc(3365)] Received HEADERS for invalid stream 5
+[0516/161403.109:INFO:CONSOLE(22)] "Here I am !!!", source: https://cn1app/streams/1 (22)

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="GUI 1" cloudDestinationProperty="ProfileUserE" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" >
+    <component type="ImageViewer" name="ImageViewer" cloudDestinationProperty="ImageViewer" >
+      <custom name="image" type="com.codename1.ui.Image" value="4882066.jpg" />
+    </component>
+  </component>
+</component>

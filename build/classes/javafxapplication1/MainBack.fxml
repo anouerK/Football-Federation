@@ -6,7 +6,10 @@
 
 <AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="662.0" style="-fx-background-color: #d1e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.MainBackController">
    <children>
-      <ImageView fx:id="rollback" fitHeight="35.0" fitWidth="41.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#rollback" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="rollback" fitHeight="35.0" fitWidth="41.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#rollback" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AhmedImages/rollback.png" />
+         </image></ImageView>
       <ImageView fx:id="users" fitHeight="60.0" fitWidth="80.0" layoutX="100.0" layoutY="100.0" onMouseClicked="#users" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../AhmedImages/users.png" />

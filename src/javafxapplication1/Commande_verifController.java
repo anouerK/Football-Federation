@@ -80,6 +80,7 @@ public class Commande_verifController implements Initializable {
         BufferedImage bufferedImage = null;
    
             BitMatrix byteMatrix;
+            /*
         try {
             byteMatrix = qrCodeWriter.encode(myWeb, BarcodeFormat.QR_CODE, width, height);
        
@@ -107,6 +108,8 @@ public class Commande_verifController implements Initializable {
         
         
         qrvVew.setImage(SwingFXUtils.toFXImage(bufferedImage, null));
+*/
+            System.out.println(" CODE = "+myWeb);
     }    
 
     @FXML

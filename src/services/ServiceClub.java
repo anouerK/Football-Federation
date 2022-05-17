@@ -32,10 +32,10 @@ Connection cnx = MyDB.getInstance().getConnection();
   
     public void ajouter(club e) {
         try {
-            String req = "INSERT INTO club (id, nomc, descr, logo ) VALUES ('" + e.getId() + "','" + e.getNomc() + "','" + e.getDescr() + "','" + e.getLogo() +   "')";
+            String req = "INSERT INTO club (president, nomc, descr, logo ) VALUES ('" + e.getPresident()+ "','" + e.getNomc() + "','" + e.getDescr() + "','" + e.getLogo() +   "')";
             Statement st = cnx.createStatement();
             st.executeUpdate(req);
-            System.out.println("Joueur ajoutée !");
+            System.out.println("Club ajoutée !");
             // JavaMailUtil.sendMail("adem.wertani@esprit.tn");
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
@@ -47,10 +47,10 @@ Connection cnx = MyDB.getInstance().getConnection();
   
     public void supprimer(club e) {
         try {
-            String req = "DELETE  FROM club where id_club=" + e.getId();
+            String req = "DELETE  FROM club where id=" + e.getId();
             Statement st = cnx.createStatement();
             st.executeUpdate(req);
-            System.out.println("Joueur supprimée !");
+            System.out.println("club supprimée !");
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
@@ -59,10 +59,10 @@ Connection cnx = MyDB.getInstance().getConnection();
  
     public void modifier(club e) {
         try {
-            String req = "UPDATE club SET id='"+e.getId()+"',nomc='" + e.getNomc() + "',descr='" + e.getDescr()  + "',logo='" + e.getLogo() +  "' WHERE id_club =" + e.getId();
+            String req = "UPDATE club SET president='"+e.getPresident()+"',nomc='" + e.getNomc() + "',descr='" + e.getDescr()  + "',logo='" + e.getLogo() +  "' WHERE id =" + e.getId();
             Statement st = cnx.createStatement();
             st.executeUpdate(req);
-            System.out.println("Joueur modifé !");
+            System.out.println("club modifé !");
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
